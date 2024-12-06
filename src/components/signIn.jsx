@@ -15,7 +15,7 @@ const SignIn = ({ toggle }) => {
                 <p className="text-gray-600 text-sm md:text-lg">Please log in to continue.</p>
             </div>
             <div className="mt-2 md:mt-8 space-y-2">
-                <label className="block text-gray-700 md:text-sm font-medium">Email Address:</label>
+                <label className="block text-gray-700 md:text-sm font-medium">Email Address</label>
                 <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="email"
