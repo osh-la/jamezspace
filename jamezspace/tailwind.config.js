@@ -9,6 +9,9 @@ export default {
       boxShadow: {
         'custom': '0px 0px 4px 0px rgba(0, 0, 0, 0.25)', 
       },
+      height: {
+        'custom': '50%', // Adding 40% as a custom height value
+      },
     },
   },
   plugins: [],

@@ -9,7 +9,6 @@ import Homepage from './pages/Homepage';
 import Product from './pages/Product';
 import Productcat from './pages/ProductCat';
 import Notfound from './pages/notfound';
-import Login from './components/login';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<MainLayout />}>

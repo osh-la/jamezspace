@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect  } from "react";
 
 function Banner() {
   const images = [
@@ -16,10 +16,17 @@ function Banner() {
   const handleNextClick = () => {
     setCurrentIndex((currentIndex + 1) % images.length);
   };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
 
+  
+    return () => clearInterval(interval);
+  }, [images.length]);
   return (
     <>
-      {/* Desktop Banner */}
+      
       <div className="hidden md:block relative">
         <img
           src={images[currentIndex]}

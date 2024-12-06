@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,200,000",
       "isFavorite": false,
@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,500,000",
       "isFavorite": false,
@@ -17,7 +17,7 @@
     },
     {
       "id": 3,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,200,000",
       "isFavorite": false,
@@ -25,42 +25,42 @@
     },
     {
       "id": 4,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,200,000",
       "isFavorite": false
     },
     {
       "id": 5,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,200,000",
       "isFavorite": false
     },
     {
       "id": 6,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,200,000",
       "isFavorite": false
     },
     {
       "id": 7,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,200,000",
       "isFavorite": false
     },
     {
       "id": 8,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,200,000",
       "isFavorite": false
     },
     {
       "id": 9,
-      "image": "/iphone1.png",
+      "image": "/iphone2.png",
       "title": "iPhone 14 Pro Max",
       "price": "₦1,200,000",
       "isFavorite": false

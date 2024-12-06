@@ -105,7 +105,7 @@ const Productcat = () => {
             </svg>
             </button>   
 
-            {/* Your category list content here */}
+            
             <section className="grid grid-cols-1 gap-4">
             <h1 className="text-xl font-bold">Select item type</h1>
             <Card>

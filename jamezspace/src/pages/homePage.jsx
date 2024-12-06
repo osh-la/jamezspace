@@ -16,7 +16,7 @@ const Homepage = () => {
   return (
     <section>
 
-      <section className=" font-family:'SF_Pro_Display-Bold',Helvetica]  md:mx-20">
+      <section className=" font-family:'SF_Pro_Display-Bold',Helvetica] p-2 md:mx-20">
         <div className='text-center py-5 md:py-0 md:m-10'>
           <h1 className='text-green-600 font-bold text-2xl md:text-6xl'>
             Discover amazing deals
