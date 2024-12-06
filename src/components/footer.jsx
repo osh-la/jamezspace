@@ -33,7 +33,7 @@ const Footer = () => {
           <div class="text-center text-white text-base font-medium leading-none">
             Access JamezPay Anywhere Anytime
           </div>
-          <div class="h-24 flex flex-col justify-center md:justify-start items-center gap-2.5">
+          <div class="h-24 flex flex-col justify-center md:justify-start md:items-center gap-2.5">
             <div class="w-36 h-10 bg-black rounded border border-gray-400">
               <img className="w-full " src="/footer/app.png" alt="App Store icon" />
             </div>

@@ -14,8 +14,8 @@ const CategoryItem = ({ image, title, count, subcategories }) => {
         <Link to={'/productcat'} className="flex items-center">
           <img src={image} alt={title} className="w-10 h-10 mr-4" />
           <div>
-            <h3 className="text-sm font-medium">{title}</h3>
-            <p className="text-gray-500 text-sm">{count} Items</p>
+            <h3 className="text-gray-700 text-base font-bold font-['SF Pro Display'] leading-snug tracking-wide">{title}</h3>
+            <p className="text-gray-500 text-base font-medium font-['SF Pro Display'] leading-normal tracking-wide">{count} Items</p>
           </div>
         </Link>
         <svg onClick={toggleExpand} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class={`w-6 h-6 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
@@ -27,8 +27,8 @@ const CategoryItem = ({ image, title, count, subcategories }) => {
           <li key={index} className=" pl-14 flex items-center justify-start space-y-2 ">
             <img src={subcategory.image} alt={subcategory.title} className="w-9 h-9 rounded-full mr-4" />
             <div>
-              <p>{subcategory.title}</p>
-              <p className="text-gray-500">{subcategory.count} Items</p>
+              <p className="text-gray-700 text-base font-bold font-['SF Pro Display'] leading-snug tracking-wide">{subcategory.title}</p>
+              <p className="text-gray-500 text-base font-medium font-['SF Pro Display'] leading-normal tracking-wide">{subcategory.count} Items</p>
             </div>
           </li>
         ))}
