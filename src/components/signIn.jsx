@@ -1,6 +1,6 @@
 const SignIn = ({ toggle }) => {
     return (
-        <div className=" text-xs md:text-base md:w-2/5 mx-auto bg-white rounded-lg shadow-lg p-12 relative">
+        <div className="fixed text-xs md:text-base md:w-2/5 mx-auto bg-white rounded-lg shadow-lg p-12">
             <div className=" flex justify-end">
                 <button className=" text-gray-500 hover:text-gray-700" onClick={toggle} >
                     <svg xmlns="http://www.w3.org/2000/svg" className='h-5 w-5 'viewBox="0 0 28 28" fill="none">
