@@ -76,7 +76,7 @@ const Homepage = () => {
         <section className='md:grid md:grid-cols-3 gap-2'>
 
 
-          <div className="col-span-1 rounded-lg md:bg-gray-100 p-4 md:shadow-md mt-4 ">
+          <div className="col-span-1 rounded-lg md:bg-gray-100 p-4 md:shadow-custom mt-4 ">
             <h1 className='hidden md:block font-bold text-lg'>Select Item Type</h1>
             <CategoryList />
           </div>
