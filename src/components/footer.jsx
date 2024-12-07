@@ -29,24 +29,21 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="md:w-3/4 h-32 flex flex-col justify-center md:justify-start md:items-center gap-4">
-          <div class="text-center text-white text-base font-medium leading-none">
+        <div class="">
+          <div class="text-center md:text-start text-white text-base font-medium leading-none">
             Access JamezPay Anywhere Anytime
           </div>
-          <div class="h-24 flex flex-col justify-center md:justify-start md:items-center gap-2.5">
+          <div class="mt-6 flex flex-col items-center md:items-start">
             <div class="w-36 h-10 bg-black rounded border border-gray-400">
               <img className="w-full " src="/footer/app.png" alt="App Store icon" />
             </div>
-            <div class="w-36 h-10 rounded border border-gray-400 relative">
+            <div class="w-36 h-10 rounded border mt-4 border-gray-400 relative">
             <img src="/footer/play.png" alt="" />
-              <div class="w-6 h-7 absolute left-2.5 top-2">
-               
-            </div>
           </div>
         </div>
         </div>
 
-        <div class="md:w-44 flex justify-center md:justify-start items-start">
+  <div class="flex justify-center md:justify-start items-start gap-6">
     <div class="w-6 h-6">
       <img src="/icons/Twitter.svg" alt="twitter" />
     </div>

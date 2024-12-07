@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignUp = ({ toggle }) => {
   return (
-    <div className="fixed text-xs md:text-base inset-0 w-full flex items-center justify-center md:bg-black md:bg-opacity-50">
+    <div className="md:fixed md:inset-0 z-50 text-xs md:text-base inset-0 w-full flex items-center justify-center md:h-screen md:bg-black md:bg-opacity-50">
       <div className="md:w-2/5 bg-white rounded-lg shadow-lg p-5 md:p-10 md:max-h-screen">
 
         <div className="flex justify-end">
