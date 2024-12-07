@@ -1,24 +1,24 @@
-import React, { useState , useEffect  } from "react";
+import React, { useState, useEffect } from "react";
 
 function Banner() {
-  
-const banner = [
-  {
-    image: "/banner/bannerFirst.png",
-    text: "Reach thousands of buyers with ease on JamezSpace.",
-    button:"Start Shopping"
-  },
-  {
-    image: "/banner/bannerSecond.png",
-    text: "Start conversations and arrange convenient meetups near you",
-    button:"Find Out How"
-  },
-  {
-    image: "/banner/bannerLast.png",
-    text: "Explore More with JamezSpace Premium Plans",
-    button:"Explore Plans"
-  },
-];
+
+  const banner = [
+    {
+      image: "/banner/bannerFirst.png",
+      text: "Reach thousands of buyers with ease on JamezSpace.",
+      button: "Start Shopping"
+    },
+    {
+      image: "/banner/bannerSecond.png",
+      text: "Start conversations and arrange convenient meetups near you",
+      button: "Find Out How"
+    },
+    {
+      image: "/banner/bannerLast.png",
+      text: "Explore More with JamezSpace Premium Plans",
+      button: "Explore Plans"
+    },
+  ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -37,9 +37,9 @@ const banner = [
 
     return () => clearInterval(interval);
   }, []);
-  return(
+  return (
     <>
-      
+
       <div className="hidden md:block relative">
         <img
           src={banner[currentIndex].image}
@@ -84,33 +84,33 @@ const banner = [
       <div
         className="block md:hidden rounded-md relative bg-cover bg-no-repeat bg-center"
         style={{
-          backgroundImage: `url(${banner[currentIndex.image]})`,
-          height: "110px", 
-          borderRadius: "10px", 
-       
+          backgroundImage: `url(${banner[currentIndex].image})`,
+          height: "110px",
+          borderRadius: "10px",
+
         }}
       >
         <div className="absolute inset-0 rounded-md " />
-          <div className="absolute inset-0 flex items-center justify-between px-4">
-        
-            <button onClick={handlePrevClick} className="p-2 z-10">
-              <img src="/leftarrow.svg" alt="Previous" className="w-6 h-6" />
-            </button>
+        <div className="absolute inset-0 flex items-center justify-between px-4">
+
+          <button onClick={handlePrevClick} className="p-2 z-10">
+            <img src="/leftarrow.svg" alt="Previous" className="w-6 h-6" />
+          </button>
 
 
-            <div className="text-left flex-1 z-10">
-              <h1 className="text-white font-bold text-sm leading-2">
-                {banner[currentIndex].text}
-              </h1>
-              <button className="mt-2 border border-white text-white py-1 px-4 text-xs rounded-md">
+          <div className="text-left flex-1 z-10">
+            <h1 className="text-white font-bold text-sm leading-2">
+              {banner[currentIndex].text}
+            </h1>
+            <button className="mt-2 border border-white text-white py-1 px-4 text-xs rounded-md">
               {banner[currentIndex].button}
-              </button>
-            </div>
-
-            {/* Right Arrow */}
-            <button onClick={handleNextClick} className="p-2 z-10">
-              <img src="/rightarrow.svg" alt="Next" className="w-6 h-6" />
             </button>
+          </div>
+
+          {/* Right Arrow */}
+          <button onClick={handleNextClick} className="p-2 z-10">
+            <img src="/rightarrow.svg" alt="Next" className="w-6 h-6" />
+          </button>
         </div>
       </div>
     </>
