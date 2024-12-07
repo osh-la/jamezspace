@@ -1,35 +1,48 @@
 import React, { useState , useEffect  } from "react";
 
 function Banner() {
-  const images = [
-    "/banner/Banner.png",
-    "/banner/Banner1.png",
-    "/banner/2.png",
-  ];
+  
+const banner = [
+  {
+    image: "/banner/bannerFirst.png",
+    text: "Reach thousands of buyers with ease on JamezSpace.",
+    button:"Start Shopping"
+  },
+  {
+    image: "/banner/bannerSecond.png",
+    text: "Start conversations and arrange convenient meetups near you",
+    button:"Find Out How"
+  },
+  {
+    image: "/banner/bannerLast.png",
+    text: "Explore More with JamezSpace Premium Plans",
+    button:"Explore Plans"
+  },
+];
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevClick = () => {
-    setCurrentIndex((currentIndex - 1 + images.length) % images.length);
+    setCurrentIndex((currentIndex - 1 + banner.length) % banner.length);
   };
 
   const handleNextClick = () => {
-    setCurrentIndex((currentIndex + 1) % images.length);
+    setCurrentIndex((currentIndex + 1) % banner.length);
   };
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % banner.length);
     }, 3000);
 
-  
     return () => clearInterval(interval);
-  }, [images.length]);
-  return (
+  }, []);
+  return(
     <>
       
       <div className="hidden md:block relative">
         <img
-          src={images[currentIndex]}
+          src={banner[currentIndex].image}
           alt="Desktop Banner"
           className="w-full h-full object-cover"
         />
@@ -46,10 +59,10 @@ function Banner() {
           </button>
           <div className="md:space-y-4">
             <h1 className="font-family:'SF_Pro_Display-Bold',Helvetica] w-4/5 text-base md:w-[709px] left-8 tracking-0 md:top-11 font-semibold md:font-bold leading-[normal] md:text-4xl text-white">
-              Reach thousands of buyers with ease on JamezSpace.
+              {banner[currentIndex].text}
             </h1>
             <button className="text-white border hover:text-gray-100 border-white md:py-2 px-4 text-sm rounded-md">
-              Start Selling
+              {banner[currentIndex].button}
             </button>
           </div>
         </div>
@@ -71,7 +84,7 @@ function Banner() {
       <div
         className="block md:hidden rounded-md relative bg-cover bg-no-repeat bg-center"
         style={{
-          backgroundImage: `url(${images[currentIndex]})`,
+          backgroundImage: `url(${banner[currentIndex.image]})`,
           height: "110px", 
           borderRadius: "10px", 
        
@@ -87,10 +100,10 @@ function Banner() {
 
             <div className="text-left flex-1 z-10">
               <h1 className="text-white font-bold text-sm leading-2">
-                Reach thousands of buyers with ease on JamezSpace.
+                {banner[currentIndex].text}
               </h1>
               <button className="mt-2 border border-white text-white py-1 px-4 text-xs rounded-md">
-                Start Selling
+              {banner[currentIndex].button}
               </button>
             </div>
 
@@ -102,6 +115,5 @@ function Banner() {
       </div>
     </>
   );
-}
-
+};
 export default Banner;

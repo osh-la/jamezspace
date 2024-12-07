@@ -38,7 +38,7 @@ const Homepage = () => {
             </div>
           </div>
           <div className="">
-            <div className={`absolute inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-50 z-50 ${location ? 'block' : 'hidden'}`}>
+            <div className={`fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-50 z-50 ${location ? 'block' : 'hidden'}`}>
               <div className='m-auto bg-white md:w-1/2 round p-10 '>
                 <div className="flex justify-between items-center">
                   <div className="">
