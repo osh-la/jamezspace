@@ -96,7 +96,7 @@ const Productcat = () => {
       {/* Mobile View */}
       <div className="md:hidden">
         
-        <div className={`fixed inset-0  z-50 ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`absolute inset-0  z-50 ${isMenuOpen ? 'block' : 'hidden'}`}>
        
           <div className="bg-gray-100 w-full max-w-sm mx-auto rounded-lg p-4">
             <button className="absolute top-2 right-4 text-gray-500 hover:text-gray-700" onClick={toggleMenu}>
