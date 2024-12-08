@@ -51,46 +51,36 @@ const Product = () => {
                   </h2>
                 </div>
 
-
-                
-
-<div className="flex space-between">
-
-
-
-                <div className="h-11 px-7 bg-orange-100 rounded-2xl justify-center items-center gap-2.5 inline-flex">
-                  <Button bg="text-orange-500" round="rounded-full">
-                  <p className=" text-center text-sm md:text-base font-bold font-['SF Pro Display'] leading-normal">
-                      Promoted
-                    </p>
-                  </Button>
-
-                </div>
-                  <img className="w-10 ml-5 h-10" src="/icons/heart.svg" alt="" />
+                <div className="flex space-between">
+                  <div className="h-11 px-7 bg-orange-100 rounded-2xl justify-center items-center gap-2.5 inline-flex">
+                    <Button bg="text-orange-500" round="rounded-full">
+                      <p className=" text-center text-sm md:text-base font-bold font-['SF Pro Display'] leading-normal">
+                        Promoted
+                      </p>
+                    </Button>
                   </div>
+                  <img
+                    className="w-10 ml-5 h-10"
+                    src="/icons/heart.svg"
+                    alt=""
+                  />
+                </div>
               </div>
 
-              <div className="  flex gap-2 text-sm">
+              <div className="  flex gap-4 mt-6 text-center text-gray-600 text-base font-medium font-['SF Pro Display'] leading-normal">
                 <div className="flex items-center gap-1">
-                  <img className="w-4 h-4" src="/icons/views.png" alt="" />
-                  <p className="ext-center text-gray-600   font-medium font-['SF Pro Display'] leading-normal">Abuja, Nigeria</p>
+                  <img className="w-4 h-4" src={Target} alt="" />
+                  <p>Abuja, Nigeria</p>
                 </div>
                 <div className="flex items-center gap-1">
                   <img className="w-4 h-4" src={Time} alt="" />
-                  <p className="text-center text-gray-600   font-medium font-['SF Pro Display'] leading-normal">Posted 2 hours ago</p>
+                  <p>Posted 2 hours ago</p>
                 </div>
                 <div className="flex items-center gap-1">
                   <img className="w-4 h-4" src="/icons/views.png" alt="" />
-                  <p className="text-center text-gray-600   font-medium font-['SF Pro Display'] leading-normal">174 views</p>
+                  <p>174 views</p>
                 </div>
               </div>
-
- 
-
-
-
-
-
             </div>
 
             <div className="border-b-2 border-gray-100  md:py-6">
@@ -149,22 +139,21 @@ const Product = () => {
                 </h2>
               </div>
               <div className="grid grid-cols-2 text-sm text-gray-500">
-                <div className="flex items-center">
-                  <img src={Target} alt="" />
-                  <p>Abuja,Nigeria</p>
+                <div className="flex items-center gap-1">
+                  <img className="w-4 h-4" src={Target} alt="" />
+                  <p>Abuja, Nigeria</p>
                 </div>
-                <div className="flex items-center">
-                  <img src={Time} alt="" />
-                  <p>Open Monday - Saturday, 09:00 AM - 6:00 P</p>
+
+                <div className="flex items-center gap-1">
+                  <img className="w-6 h-6" src={Time} alt="" />
+                  <p>Open Monday - Saturday, 09:00 AM - 6:00 PM</p>
                 </div>
+
                 <div>Shop 34B, Bannex Plaza, Wuse II</div>
-                <div>
-                  <div
-                    href=""
-                    className="bg-orange-100 rounded-full p-4 text-orange-700 md:w-1/2 text-center"
-                  >
-                    Closed now
-                  </div>
+                <div className="h-11  w-48 bg-red-100 rounded-2xl justify-center items-center gap-2.5 inline-flex">
+                  <p className="text-red-500 text-center text-sm md:text-base font-bold font-['SF Pro Display'] leading-normal">
+                    Closed Now
+                  </p>
                 </div>
               </div>
             </section>
@@ -406,20 +395,28 @@ const Product = () => {
             </Button>
           </Card>
 
-          <div class="bg-orange-400 rounded-lg space-y-4 p-6 m-2">
-            <img
-              src="/lady.png"
-              alt="Product Image"
-              class=" object-contain  mb-4"
-            />
+          <div className="max-w-md mx-auto">
+            <div class="relative bg-orange-400 mt-6 h-ads rounded-2xl overflow-hidden">
+              <img src="/lady.png" alt="Product Image" className="  w-full " />
+              <div className="w-full absolute bottom-0 h-60 items-center justify-center inline-flex -mt-96  bg-gradient-to-t from-orange-400 via-orange-500 to-transparent">
+                <div className="m-8    space-y-6 to-orange-400">
+                  <h2 className="text-2xl font-semibold text-white leading-tight">
+                    Reach thousands of buyers with ease on JamezSpace.
+                  </h2>
 
-            <h2 class="text-white text-xl font-bold mb-2">
-              Reach thousands of buyers with ease on JamezSpace.
-            </h2>
+                  <button class="text-center text-white text-base font-medium font-['SF Pro Display'] leading-normal py-2 px-4 rounded border border-white">
+                    Start Selling
+                  </button>
 
-            <button class="text-white font-bold py-2 px-4 rounded border border-white">
-              Start Selling
-            </button>
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
