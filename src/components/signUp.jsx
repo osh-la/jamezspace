@@ -20,7 +20,8 @@ const SignUp = ({ toggle }) => {
         <div className="md:mt-2 space-y-4">
           {['Full Name', 'Email Address', 'Phone Number'].map((label, idx) => (
             <div className="" key={idx}>
-              <label className="block text-gray-700 font-medium">{label}</label>
+              
+              <label className="block text-gray-700 md:text-sm font-medium">{label}</label>
               <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                 <input
                   type={label.toLowerCase().includes('password') ? 'password' : 'text'}
@@ -32,7 +33,7 @@ const SignUp = ({ toggle }) => {
             </div>
             
           ))}
-          <label className="block text-gray-700 font-medium">Enter Password</label>
+          <label className="block text-gray-700 md:text-sm font-medium">Enter Password</label>
               <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="password"
@@ -44,7 +45,7 @@ const SignUp = ({ toggle }) => {
                       <img className='w-6 h-6'src="/icons/Frame.png" alt="" />
                     </button>
                 </div>
-                <label className="block text-gray-700 font-medium">Confirm Password</label>
+                <label className="block text-gray-700 md:text-sm font-medium">Confirm Password</label>
                 <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="password"
