@@ -13,7 +13,7 @@ function Login() {
 
   return (
     <div>
-      {/* Links that trigger the login modal */}
+     
       <div className="space-y-4">
         <button
           onClick={openModal}
@@ -29,7 +29,7 @@ function Login() {
         </button>
       </div>
 
-      {/* Modal */}
+ 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-lg w-96 p-6 relative">
