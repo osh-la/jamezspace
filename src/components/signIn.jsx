@@ -1,6 +1,6 @@
 const SignIn = ({ toggle }) => {
     return (
-        <div className="md:fixed md:inset-0 z-50 text-xs md:text-base md:w-2/5 mx-auto bg-white rounded-lg shadow-custom p-12">
+        <div className="md:fixed md:inset-0 z-50 m-14 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-12">
             <div className=" flex justify-end">
                 <button className=" text-gray-500 hover:text-gray-700" onClick={toggle} >
                     <svg xmlns="http://www.w3.org/2000/svg" className='h-5 w-5 'viewBox="0 0 28 28" fill="none">
@@ -67,18 +67,19 @@ const SignIn = ({ toggle }) => {
                     <span>Continue with Google</span>
                 </button>
             </div>
-            <p className="mt-2 md:mt-4 text-center text-gray-400 md:text-sm">
-                By signing in you agree to JamezSpace's{" "}
-                <a href="#" className="text-green-600 hover:underline">
-                    Terms & Conditions
-                </a>
-            </p>
             <div className="mt-2 md:mt-4 text-center">
                 <span className="text-gray-700 md:text-sm">New to JamezSpace? </span>
                 <a href="#" className="text-green-600 md:text-sm font-medium hover:underline">
                     Create an Account
                 </a>
             </div>
+            <p className="mt-2 md:mt-4 text-center text-gray-400 md:text-sm">
+                By signing in you agree to JamezSpace's{" "}
+                <a href="#" className="text-green-600 hover:underline">
+                    Terms & Conditions
+                </a>
+            </p>
+            
         </div>
 
     )

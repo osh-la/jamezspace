@@ -2,8 +2,7 @@ import React from 'react'
 
 const SignUp = ({ toggle }) => {
   return (
-    <div className="md:fixed md:inset-0 z-50 text-xs md:text-base inset-0 w-full flex items-center justify-center md:h-screen md:bg-black md:bg-opacity-50">
-      <div className="md:w-2/5 bg-white rounded-lg shadow-lg p-5 md:p-10 md:max-h-screen">
+      <div className="md:fixed md:inset-0 z-50  text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-12">
 
         <div className="flex justify-end">
           <button className="text-gray-500 hover:text-gray-700" onClick={toggle}>
@@ -18,7 +17,7 @@ const SignUp = ({ toggle }) => {
           <p className="text-gray-600 text-sm md:text-lg">Create an account to start buying and selling with ease.</p>
         </div>
 
-        <div className="md:mt-2 space-y-2">
+        <div className="md:mt-2 space-y-4">
           {['Full Name', 'Email Address', 'Phone Number'].map((label, idx) => (
             <div className="" key={idx}>
               <label className="block text-gray-700 font-medium">{label}</label>
@@ -98,7 +97,6 @@ const SignUp = ({ toggle }) => {
           </p>
         </div>
       </div>
-    </div>
 
 
   )
