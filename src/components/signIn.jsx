@@ -1,6 +1,6 @@
 const SignIn = ({ toggle }) => {
     return (
-        <div className="md:fixed md:inset-0 z-50 m-10 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-12">
+        <div className="md:fixed md:inset-0 z-50 m-16 p-20 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom">
             <div className=" flex justify-end">
                 <button className=" text-gray-500 hover:text-gray-700" onClick={toggle} >
                     <svg xmlns="http://www.w3.org/2000/svg" className='h-5 w-5 'viewBox="0 0 28 28" fill="none">
@@ -8,7 +8,7 @@ const SignIn = ({ toggle }) => {
                     </svg>
                 </button>
             </div>
-            <div className="text-center space-y-2">
+            <div className="text-center space-y-12">
                 <h1 className="text-green-600 text-xl md:text-3xl font-bold leading-tight">
                     Welcome Back to JamezSpace!
                 </h1>
@@ -24,7 +24,7 @@ const SignIn = ({ toggle }) => {
                     />
                 </div>
             </div>
-            <div className="mt-2 md:mt-6 space-y-2">
+            <div className="mt-2 md:mt-6 space-y-2 ">
                 <label className="block text-gray-700 md:text-sm font-medium">Password</label>
                 <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input

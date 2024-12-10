@@ -13,7 +13,7 @@ export default {
       height: {
         'custom': '50%', // Adding 40% as a custom height value
         'card': '598.54px',
-        'ads': '450px'
+        'ads': '510px'
       },
       width: {
         'card': '820px',

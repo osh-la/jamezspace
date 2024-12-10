@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignUp = ({ toggle }) => {
   return (
-      <div className="md:fixed md:inset-0 z-50  text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-12">
+      <div className="md:fixed md:inset-0 z-50 m-6 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-20">
 
         <div className="flex justify-end">
           <button className="text-gray-500 hover:text-gray-700" onClick={toggle}>
@@ -12,7 +12,7 @@ const SignUp = ({ toggle }) => {
           </button>
         </div>
 
-        <div className="text-center">
+        <div className="text-center space-y-16">
           <h1 className="text-green-600 text-lg  md:text-3xl font-bold ">Join JamezSpace Today!</h1>
           <p className="text-gray-600 text-sm md:text-lg">Create an account to start buying and selling with ease.</p>
         </div>
@@ -33,7 +33,9 @@ const SignUp = ({ toggle }) => {
             </div>
             
           ))}
-          <label className="block text-gray-700 md:text-sm font-medium">Enter Password</label>
+          <div flex flex-col>
+
+          <label className=" text-gray-700 md:text-sm font-medium">Enter Password</label>
               <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="password"
@@ -45,7 +47,11 @@ const SignUp = ({ toggle }) => {
                       <img className='w-6 h-6'src="/icons/Frame.png" alt="" />
                     </button>
                 </div>
-                <label className="block text-gray-700 md:text-sm font-medium">Confirm Password</label>
+          </div>
+
+                <div className=" flex flex-col">
+
+                <label className=" text-gray-700 md:text-sm font-medium ">Confirm Password</label>
                 <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="password"
@@ -57,6 +63,9 @@ const SignUp = ({ toggle }) => {
                       <img className='w-6 h-6'src="/icons/Frame.png" alt="" />
                     </button>
                 </div>
+                </div>
+
+                
         </div>
 
 
