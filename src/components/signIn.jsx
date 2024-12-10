@@ -1,6 +1,10 @@
 const SignIn = ({ toggle }) => {
     return (
-        <form className="md:fixed md:inset-0 z-50 text-xs md:text-base md:w-2/5 mx-auto bg-white rounded-lg shadow-custom p-12">
+        <>
+        <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">
+
+        </div>
+        <div className="md:fixed md:inset-0 z-50 m-16 p-20 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom ">
             <div className=" flex justify-end">
                 <button className=" text-gray-500 hover:text-gray-700" onClick={toggle} >
                     <svg xmlns="http://www.w3.org/2000/svg" className='h-5 w-5 'viewBox="0 0 28 28" fill="none">
@@ -8,7 +12,7 @@ const SignIn = ({ toggle }) => {
                     </svg>
                 </button>
             </div>
-            <div className="text-center space-y-2">
+            <div className="text-center space-y-12">
                 <h1 className="text-green-600 text-xl md:text-3xl font-bold leading-tight">
                     Welcome Back to JamezSpace!
                 </h1>
@@ -24,7 +28,7 @@ const SignIn = ({ toggle }) => {
                     />
                 </div>
             </div>
-            <div className="mt-2 md:mt-6 space-y-2">
+            <div className="mt-2 md:mt-6 space-y-2 ">
                 <label className="block text-gray-700 md:text-sm font-medium">Password</label>
                 <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
@@ -67,19 +71,21 @@ const SignIn = ({ toggle }) => {
                     <span>Continue with Google</span>
                 </button>
             </div>
-            <p className="mt-2 md:mt-4 text-center text-gray-400 md:text-sm">
-                By signing in you agree to JamezSpace's{" "}
-                <a href="#" className="text-green-600 hover:underline">
-                    Terms & Conditions
-                </a>
-            </p>
             <div className="mt-2 md:mt-4 text-center">
                 <span className="text-gray-700 md:text-sm">New to JamezSpace? </span>
                 <a href="#" className="text-green-600 md:text-sm font-medium hover:underline">
                     Create an Account
                 </a>
             </div>
-        </form>
+            <p className="mt-2 md:mt-4 text-center text-gray-400 md:text-sm">
+                By signing in you agree to JamezSpace's{" "}
+                <a href="#" className="text-green-600 hover:underline">
+                    Terms & Conditions
+                </a>
+            </p>
+            
+        </div>
+        </>
 
     )
 }

@@ -9,7 +9,8 @@ const Footer = () => {
             <img src={Logo} alt="JamezSpace logo" />
             <h1 className="font-bold">JamezSpace</h1>
           </div>
-          <p className='text-center md:text-start'>
+
+          <p className="text-center md:text-start text-sm font-normal font-['SF Pro Display'] leading-loose ">
             JamezSpace is your trusted marketplace for buying and selling goods locally. We connect communities, offering a seamless platform for exchanging quality products and services.
 
           </p>
@@ -18,8 +19,8 @@ const Footer = () => {
 
         <div className="col-span-1 ">
           <div className="flex  justify-center md:text-start">
-            <ul className="list-none pl-4 md:pl-0 space-y-4">
-              <h2 className='font-bold'>Services</h2>
+            <ul className="list-none pl-4 md:pl-0 space-y-3 font-light font-['SF Pro Display'] leading-loose">
+              <h2 className="text-base font-bold font-['SF Pro Display'] leading-loose" >Services</h2>
               <li><Link to="/">Home</Link></li>
               <li><a href="/">Sell an item</a></li>
               <li><a href="/">About us</a></li>
@@ -30,7 +31,7 @@ const Footer = () => {
           </div>
         </div>
         <div class="">
-          <div class="text-center md:text-start text-white text-base font-medium leading-none">
+          <div class="text-center md:text-start text-white text-base font-bold leading-none">
             Access JamezPay Anywhere Anytime
           </div>
           <div class="mt-6 flex flex-col items-center md:items-start">

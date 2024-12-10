@@ -34,8 +34,8 @@ const ImageSlider = () => {
             alt="Slider Image"
           />
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className="text-white md:text-2xl font-bold">
-              <div class="text-white/30 md:text-5xl font-black text-center md:text-start leading-relaxed" style={{
+            <span className="text-white  font-bold">
+              <div class="text-white/30 md:text-7xl font-black text-center md:text-start leading-relaxed" style={{
         WebkitTextStroke: '1px white',
         textStroke: '1px white'
       }}>
@@ -44,7 +44,7 @@ const ImageSlider = () => {
 
              
               
-              <div class="text-white/30 md:text-2xl font-bold leading-5" style={{
+              <div class="text-white/30 md:text-4xl font-bold text-center leading-5" style={{
         WebkitTextStroke: '1px white',
         textStroke: '1px white'
       }}>

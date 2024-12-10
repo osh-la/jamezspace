@@ -395,12 +395,12 @@ const Product = () => {
             </Button>
           </Card>
 
-          <div className="max-w-md mx-auto">
+          <div className="m-auto">
             <div class="relative bg-orange-400 mt-6 h-ads rounded-2xl overflow-hidden">
               <img src="/lady.png" alt="Product Image" className="  w-full " />
-              <div className="w-full absolute bottom-0 h-60 items-center justify-center inline-flex -mt-96  bg-gradient-to-t from-orange-400 via-orange-500 to-transparent">
-                <div className="m-8    space-y-6 to-orange-400">
-                  <h2 className="text-2xl font-semibold text-white leading-tight">
+              <div className="w-full absolute bottom-0 h-60 items-center justify-center inline-flex   bg-gradient-to-t from-orange-400 via-orange-500 to-transparent">
+                <div className="m-8 -mt-6   space-y-6 to-orange-400">
+                  <h2 className="text-3xl font-semibold text-white leading-tight">
                     Reach thousands of buyers with ease on JamezSpace.
                   </h2>
 

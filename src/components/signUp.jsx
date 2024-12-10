@@ -2,8 +2,12 @@ import React from 'react'
 
 const SignUp = ({ toggle }) => {
   return (
-    <div className="md:fixed md:inset-0 z-50 text-xs md:text-base inset-0 w-full flex items-center justify-center md:h-screen md:bg-black md:bg-opacity-50">
-      <div className="md:w-2/5 bg-white rounded-lg shadow-lg p-5 md:p-10 md:max-h-screen">
+
+    <>
+    <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">
+
+    </div>
+      <div className="md:fixed md:inset-0 z-50 m-6 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-20">
 
         <div className="flex justify-end">
           <button className="text-gray-500 hover:text-gray-700" onClick={toggle}>
@@ -13,15 +17,16 @@ const SignUp = ({ toggle }) => {
           </button>
         </div>
 
-        <div className="text-center">
+        <div className="text-center space-y-16">
           <h1 className="text-green-600 text-lg  md:text-3xl font-bold ">Join JamezSpace Today!</h1>
           <p className="text-gray-600 text-sm md:text-lg">Create an account to start buying and selling with ease.</p>
         </div>
 
-        <div className="md:mt-2 space-y-2">
+        <div className="md:mt-2 space-y-4">
           {['Full Name', 'Email Address', 'Phone Number'].map((label, idx) => (
             <div className="" key={idx}>
-              <label className="block text-gray-700 font-medium">{label}</label>
+              
+              <label className="block text-gray-700 md:text-sm font-medium">{label}</label>
               <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                 <input
                   type={label.toLowerCase().includes('password') ? 'password' : 'text'}
@@ -33,7 +38,9 @@ const SignUp = ({ toggle }) => {
             </div>
             
           ))}
-          <label className="block text-gray-700 font-medium">Enter Password</label>
+          <div flex flex-col>
+
+          <label className=" text-gray-700 md:text-sm font-medium">Enter Password</label>
               <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="password"
@@ -45,7 +52,11 @@ const SignUp = ({ toggle }) => {
                       <img className='w-6 h-6'src="/icons/Frame.png" alt="" />
                     </button>
                 </div>
-                <label className="block text-gray-700 font-medium">Confirm Password</label>
+          </div>
+
+                <div className=" flex flex-col">
+
+                <label className=" text-gray-700 md:text-sm font-medium ">Confirm Password</label>
                 <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="password"
@@ -57,6 +68,9 @@ const SignUp = ({ toggle }) => {
                       <img className='w-6 h-6'src="/icons/Frame.png" alt="" />
                     </button>
                 </div>
+                </div>
+
+                
         </div>
 
 
@@ -98,7 +112,7 @@ const SignUp = ({ toggle }) => {
           </p>
         </div>
       </div>
-    </div>
+      </>
 
 
   )
