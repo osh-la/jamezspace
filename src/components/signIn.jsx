@@ -33,7 +33,7 @@ const SignIn = ({ toggle }) => {
                 <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="password"
-                        placeholder="*******"
+                        placeholder="***"
                         className="w-full text-gray-400 md:text-base focus:outline-none"
                     />
                     <button className="text-gray-500">
