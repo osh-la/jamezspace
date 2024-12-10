@@ -134,10 +134,10 @@ import SignUp from "./signUp";
             )}
           </nav>
  
-          <div className={`absolute inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-50 z-50 ${ signIn ? 'block':'hidden'}`}>
+          <div className={`absolute inset-0 flex flex-col items-center justify-center text-start  z-50 ${ signIn ? 'block':'hidden'}`}>
             <SignIn toggle ={ToggleSignin}/>
           </div>
-          <div className={`absolute inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-50 z-50 ${ signup ? 'block':'hidden'}`}>
+          <div className={`absolute inset-0 flex flex-col items-center justify-center text-start  z-50 ${ signup ? 'block':'hidden'}`}>
             <SignUp toggle ={toggleSignUp}/>
           </div>
         </section>

@@ -2,6 +2,11 @@ import React from 'react'
 
 const SignUp = ({ toggle }) => {
   return (
+
+    <>
+    <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">
+
+    </div>
       <div className="md:fixed md:inset-0 z-50 m-6 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-20">
 
         <div className="flex justify-end">
@@ -107,6 +112,7 @@ const SignUp = ({ toggle }) => {
           </p>
         </div>
       </div>
+      </>
 
 
   )

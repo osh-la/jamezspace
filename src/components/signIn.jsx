@@ -1,6 +1,10 @@
 const SignIn = ({ toggle }) => {
     return (
-        <div className="md:fixed md:inset-0 z-50 m-16 p-20 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom">
+        <>
+        <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">
+
+        </div>
+        <div className="md:fixed md:inset-0 z-50 m-16 p-20 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom ">
             <div className=" flex justify-end">
                 <button className=" text-gray-500 hover:text-gray-700" onClick={toggle} >
                     <svg xmlns="http://www.w3.org/2000/svg" className='h-5 w-5 'viewBox="0 0 28 28" fill="none">
@@ -81,6 +85,7 @@ const SignIn = ({ toggle }) => {
             </p>
             
         </div>
+        </>
 
     )
 }
