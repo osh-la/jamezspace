@@ -1,7 +1,7 @@
 import Warn from "../components/warning";
 import Card from "../components/card";
 import Button from "../components/button";
-import ProductList from "../components/catproducts";
+import ProductList from "../components/productCatProducts";
 import Banner from "../components/banner";
 import PriceRangeFilter from "../components/PriceRangeFilter";
 import React, { useState } from 'react';

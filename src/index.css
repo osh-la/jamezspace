@@ -20,6 +20,9 @@ table {
     text-align: left;
     padding: 8px;
   }
+
+  tr:nth-child(odd){font-weight: bolder;}
+  
   input[type='range'] {
     -webkit-appearance: none;
     appearance: none;
@@ -54,7 +57,7 @@ table {
     border-radius: 12px;
   }
   
-  tr:nth-child(odd){font-weight: bolder;}
+
   @layer components {
     .radio{
         @apply appearance-none w-4 h-4 border border-gray-300 rounded-full bg-white checked:bg-green-500 checked:border-gray-300 transition duration-200;

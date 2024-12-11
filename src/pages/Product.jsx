@@ -83,7 +83,7 @@ const Product = () => {
               </div>
             </div>
 
-            <div className="border-b-2 border-gray-100  md:py-6">
+            <div className="border-b-2 border-gray-100  py-6">
               <h1 className="font-bold">Description:</h1>
               <p className="text-sm text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -92,8 +92,8 @@ const Product = () => {
                 Voluptas temporibus sed obcaecati animi officiis.
               </p>
             </div>
-            <div className="border-b-2 border-gray-100 text-sm  md:py-6">
-              <table>
+            <div className="border-b-2 border-gray-100 text-sm py-6">
+              <table className="hidden md:table">
                 <tr>
                   <td>Brand</td>
                   <td>Model</td>
@@ -125,14 +125,62 @@ const Product = () => {
                   <td>No</td>
                 </tr>
               </table>
-              <div className="flex justify-end  md:py-6">
+                  {/* mobile */}
+                  <table className="md:hidden">
+                    <tr>
+                      <td>Brand</td>
+                      <td>Model</td>
+
+                    </tr>
+                    <tr>
+                      <td>Apple</td>
+                      <td>iphone 14 pro max</td>
+
+                    </tr>
+                    <tr>
+                      <td>Condition 1</td>
+                      <td>Internal storage</td>
+
+                    </tr>
+                    <tr>
+                      <td>Used</td>
+                      <td>64gb</td>
+
+                    </tr>
+                    <tr>
+                      <td>Card slot</td>
+                      <td>Ram</td>
+                    </tr>
+                    <tr>
+                      <td>No</td>
+                      <td>Fill</td>
+                    </tr>
+                    <tr>
+                      <td>Card slot</td>
+                      <td>Condition 2</td>
+                    </tr>
+                    <tr>
+                      <td>No</td>
+                      <td>No cracks</td>
+                    </tr>
+                    <tr>
+                      <td>Screen size</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>fill</td>
+  
+                    </tr>
+
+                  </table>
+              <div className="flex justify-end  py-6">
                 <select className="text-green-600  bg-white p-2" name="" id="">
                   <option value="">View all</option>
                 </select>
               </div>
             </div>
             <section>
-              <div className="flex items-center text-sm md:text-base  md:py-6">
+              <div className="flex items-center text-sm md:text-base  py-6">
                 <img src="/icons/address.png" alt="" />
                 <h2 className="text-green-600 font-semibold">
                   Vendors address
