@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -15,13 +24,13 @@ table {
     -webkit-appearance: none;
     appearance: none;
     outline: none;
-    background: transparent; /* Removed default background */
+    background: transparent; 
   }
   
   input[type='range']::-webkit-slider-runnable-track {
     height: 8px;
     border-radius: 5px;
-    background: #d1d5db; /* Default gray */
+    background: #d1d5db; 
   }
   
   input[type='range']::-webkit-slider-thumb {
@@ -30,7 +39,7 @@ table {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #16a34a; /* Thumb color */
+    background: #16a34a; 
     cursor: pointer;
   }
   
@@ -38,7 +47,7 @@ table {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background: #16a34a; /* Thumb color */
+    background: #16a34a;
     cursor: pointer;
   }
   .round{

@@ -7,7 +7,7 @@ const SignUp = ({ toggle }) => {
     <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">
 
     </div>
-      <div className="md:fixed md:inset-0 z-50 m-6 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-20">
+      <form method='' action='/' className="md:fixed md:inset-0 z-50 m-6 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-20  overflow-y-scroll scrollbar-hide">
 
         <div className="flex justify-end">
           <button className="text-gray-500 hover:text-gray-700" onClick={toggle}>
@@ -111,7 +111,7 @@ const SignUp = ({ toggle }) => {
             </a>
           </p>
         </div>
-      </div>
+      </form>
       </>
 
 
