@@ -4,7 +4,7 @@ const SignIn = ({ toggle }) => {
         <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">
 
         </div>
-        <form method="" action="" className="md:fixed md:inset-0 z-50 m-16 p-20 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom  overflow-y-scroll scrollbar-hide">
+        <form method="" action="" className="md:fixed md:inset-0 z-50 mx-5 p-10 md:m-16 md:p-20 text-xs md:text-base md:w-2/4 w-full mx-auto bg-white rounded-2xl  shadow-custom  overflow-y-scroll scrollbar-hide">
             <div className=" flex justify-end">
                 <button className=" text-gray-500 hover:text-gray-700" onClick={toggle} >
                     <svg xmlns="http://www.w3.org/2000/svg" className='h-5 w-5 'viewBox="0 0 28 28" fill="none">
@@ -33,7 +33,7 @@ const SignIn = ({ toggle }) => {
                 <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                     <input
                         type="password"
-                        placeholder="***"
+                        placeholder="******"
                         className="w-full text-gray-400 md:text-base focus:outline-none"
                     />
                     <button className="text-gray-500">

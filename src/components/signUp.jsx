@@ -7,7 +7,7 @@ const SignUp = ({ toggle }) => {
     <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">
 
     </div>
-      <form method='' action='/' className="md:fixed md:inset-0 z-50 m-6 text-xs md:text-base md:w-2/4 mx-auto bg-white rounded-2xl  shadow-custom p-20  overflow-y-scroll scrollbar-hide">
+      <form method='' action='/' className="md:fixed md:inset-0 z-50 md:m-6 text-xs md:text-base md:w-2/4 w-full mx-auto bg-white rounded-2xl  shadow-custom p-10 md:p-20  overflow-y-scroll scrollbar-hide">
 
         <div className="flex justify-end">
           <button className="text-gray-500 hover:text-gray-700" onClick={toggle}>
@@ -17,19 +17,19 @@ const SignUp = ({ toggle }) => {
           </button>
         </div>
 
-        <div className="text-center space-y-16">
+        <div className="text-center md:space-y-16">
           <h1 className="text-green-600 text-lg  md:text-3xl font-bold ">Join JamezSpace Today!</h1>
-          <p className="text-gray-600 text-sm md:text-lg">Create an account to start buying and selling with ease.</p>
+          <p className="text-gray-600 text-xs md:text-lg">Create an account to start buying and selling with ease.</p>
         </div>
 
-        <div className="md:mt-2 space-y-4">
+        <div className="mt-2 space-y-4">
           {['Full Name', 'Email Address', 'Phone Number'].map((label, idx) => (
             <div className="" key={idx}>
               
               <label className="block text-gray-700 md:text-sm font-medium">{label}</label>
               <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">
                 <input
-                  type={label.toLowerCase().includes('password') ? 'password' : 'text'}
+                  type={label.toLowerCase()}
                   placeholder={`Enter ${label}`}
                   className="w-full text-gray-400 focus:outline-none"
                 />
@@ -74,7 +74,7 @@ const SignUp = ({ toggle }) => {
         </div>
 
 
-        <div className="md:mt-2">
+        <div className="mt-2">
           <button className="w-full bg-green-600 text-white py-3 rounded-lg tmd:ext-base font-medium hover:bg-green-700">
             Sign Up
           </button>

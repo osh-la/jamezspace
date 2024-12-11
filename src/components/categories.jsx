@@ -9,7 +9,7 @@ const CategoryItem = ({ image, title, count, subcategories }) => {
   };
 
   return (
-    <div className="border-b border-gray-200 py-6">
+    <div className="border-b border-gray-200 py-6 ">
       <div className="flex items-center justify-between cursor-pointer" >
         <Link to={'/productcat'} className="flex items-center">
           <img src={image} alt={title} className="w-10 h-10 mr-4" />
@@ -124,7 +124,7 @@ function CategoryList() {
 
 
   return (
-    <div>
+    <div className=''>
 
       <div className="hidden md:block w-full max-w-sm mx-auto rounded-lg p-4">
 
@@ -143,15 +143,15 @@ function CategoryList() {
         </button>
       </div>
       <div className="md:hidden flex justify-end">
-        <div className={`fixed inset-0 bg-black bg-opacity-50 z-50 ${isMenuOpen ? 'block' : 'hidden'}`}>
-          <div className="bg-gray-100 w-full max-w-sm mx-auto rounded-lg p-10">
-            <button className="absolute top-4 right-4 text-gray-500 hover:text-gray-700" onClick={toggleMenu}>
+        <div className={`fixed absolute inset-0 bg-black bg-opacity-50 z-50 overflow-y-scroll scrollbar-hide  ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <div className=" overlow-y-scroll md:overflow-hidden scrollbar-hide bg-gray-100 w-full mx-auto max-w-sm rounded-lg p-10">
+            <button className="absolute top-4 right-10 text-gray-500 hover:text-gray-700" onClick={toggleMenu}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6    h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
 
-            {/* Your category list here */}
+           
             {categories.map((category) => (
               <CategoryItem key={category.title} {...category} />
             ))}
