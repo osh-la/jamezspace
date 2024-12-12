@@ -14,7 +14,7 @@ const Footer = () => {
             JamezSpace is your trusted marketplace for buying and selling goods locally. We connect communities, offering a seamless platform for exchanging quality products and services.
 
           </p>
-          <p className='text-center md:text-start mt-6'>Info@jamezspace.com</p>
+          <p className='text-center md:text-start mt-6'>Info@jamezSpace.com</p>
         </div>
 
         <div className="col-span-1 ">

@@ -3,7 +3,6 @@ import Card from "../components/card";
 import Button from "../components/button";
 import Iphone from "/iphone2.png";
 import IphonePreview from "/iphone3.png";
-
 import Target from "/icons/target.png";
 import Time from "/icons/time.png";
 import Topdeals from "../components/topDeals";
@@ -20,7 +19,7 @@ const Product = () => {
           iphone 14 pro max
         </button>
       </div>
-      <div className="grid md:grid-cols-3 gap-3 mt-8 ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mt-8 ">
         <section className="md:col-span-2">
           <div className="w-full">
             <Warn />
@@ -31,22 +30,22 @@ const Product = () => {
             </div>
 
             <div className="flex gap-2 mt-4  w-full ">
-              <div className="w-52 h-44 pl-12 pr-12 py-4 bg-custom-gray rounded-2xl flex justify-center items-center">
-                <img className="w-[147px] h-[147px]" src={Iphone} />
+              <div className=" w-40 h-40 md:w-52 md:h-44 pl-12 pr-12 py-4 bg-custom-gray rounded-2xl flex justify-center items-center">
+                <img className="w-40 h-40 object-contain md:w-[147px] md:h-[147px]" src={Iphone} />
               </div>
 
-              <div className="w-52 h-44 pl-12 pr-12 py-4  bg-custom-gray rounded-2xl flex justify-center items-center">
-                <img className="w-[147px] h-[147px]" src={IphonePreview} />
+              <div className=" w-40 h-40 md:w-52 md:h-44 pl-12 pr-12 py-4  bg-custom-gray rounded-2xl flex justify-center items-center">
+                <img className="w-40 h-40 object-contain  md:w-[147px] md:h-[147px]" src={IphonePreview} />
               </div>
             </div>
 
             <div className="border-b-2 border-gray-100 py-4 md:py-6">
               <div className="flex justify-between">
                 <div className="">
-                  <h1 className="w-96 text-black text-2xl font-semibold font-['SF Pro Display'] leading-normal">
+                  <h1 className="md:w-96 text-black text-xl md:text-2xl font-semibold font-['SF Pro Display'] leading-normal">
                     iPhone 14 Pro Max
                   </h1>
-                  <h2 className="w-96 text-black text-4xl font-bold font-['SF Pro Display'] leading-normal">
+                  <h2 className="md:w-96 text-black text-xl md:text-4xl font-bold font-['SF Pro Display'] leading-normal">
                     ₦1,200,000
                   </h2>
                 </div>
@@ -54,7 +53,7 @@ const Product = () => {
                 <div className="flex space-between">
                   <div className="h-11 px-7 bg-orange-100 rounded-2xl justify-center items-center gap-2.5 inline-flex">
                     <Button bg="text-orange-500" round="rounded-full">
-                      <p className=" text-center text-sm md:text-base font-bold font-['SF Pro Display'] leading-normal">
+                      <p className=" text-center text-base md:text-base font-bold font-['SF Pro Display'] leading-normal">
                         Promoted
                       </p>
                     </Button>
@@ -67,7 +66,7 @@ const Product = () => {
                 </div>
               </div>
 
-              <div className="  flex gap-4 mt-6 text-center text-gray-600 text-base font-medium font-['SF Pro Display'] leading-normal">
+              <div className="  flex justify-between md:justify-start  mt-6 text-gray-600 text-base font-medium font-['SF Pro Display'] leading-normal">
                 <div className="flex items-center gap-1">
                   <img className="w-4 h-4" src={Target} alt="" />
                   <p>Abuja, Nigeria</p>
@@ -85,14 +84,14 @@ const Product = () => {
 
             <div className="border-b-2 border-gray-100  py-6">
               <h1 className="font-bold">Description:</h1>
-              <p className="text-sm text-gray-400">
+              <p className="text-base text-gray-400">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
                 animi, reiciendis, vel veniam explicabo voluptatibus esse natus
                 expedita, pariatur praesentium nihil nemo libero obcaecati?
                 Voluptas temporibus sed obcaecati animi officiis.
               </p>
             </div>
-            <div className="border-b-2 border-gray-100 text-sm py-6">
+            <div className="border-b-2 border-gray-100 text-base py-6">
               <table className="hidden md:table">
                 <tr>
                   <td>Brand</td>
@@ -180,13 +179,13 @@ const Product = () => {
               </div>
             </div>
             <section>
-              <div className="flex items-center text-sm md:text-base  py-6">
+              <div className="flex items-center text-base md:text-base  py-6">
                 <img src="/icons/address.png" alt="" />
                 <h2 className="text-green-600 font-semibold">
                   Vendors address
                 </h2>
               </div>
-              <div className="grid grid-cols-2 text-sm text-gray-500">
+              <div className="grid grid-cols-1 md:grid-cols-2 space-y-2 text-base text-gray-500">
                 <div className="flex items-center gap-1">
                   <img className="w-4 h-4" src={Target} alt="" />
                   <p>Abuja, Nigeria</p>
@@ -199,7 +198,7 @@ const Product = () => {
 
                 <div>Shop 34B, Bannex Plaza, Wuse II</div>
                 <div className="h-11  w-48 bg-red-100 rounded-2xl justify-center items-center gap-2.5 inline-flex">
-                  <p className="text-red-500 text-center text-sm md:text-base font-bold font-['SF Pro Display'] leading-normal">
+                  <p className="text-red-500 text-center text-base md:text-base font-bold font-['SF Pro Display'] leading-normal">
                     Closed Now
                   </p>
                 </div>
@@ -291,15 +290,15 @@ const Product = () => {
           </div>
         </section>
         {/* sidebar */}
-        <section className="md:col-span-1 text-sm md:text-base">
+        <section className="md:col-span-1 text-base md:text-base">
           <div className="bg-gray-100 border border-gray-200 shadow-custom md:border-none rounded-lg space-y-4 p-4 ">
             <h1 className="text-3xl font-bold">₦1,200,000</h1>
-            <div className="flex items-center text-sm">
+            <div className="flex items-center text-base">
               <p className="text-gray-600">Market Value: ₦930K ~ 1M </p>
               <img className="w-4 h-4" src="/icons/info.png" alt="" />
             </div>
 
-            <button className="bg-white rounded-none  w-full mt-2 center p-4 text-sm hover:text-gray-100 border-2 border-green-200">
+            <button className="bg-white rounded-none  w-full mt-2 center p-4 text-base hover:text-gray-100 border-2 border-green-200">
               Price History
             </button>
           </div>
@@ -333,12 +332,12 @@ const Product = () => {
             </div>
 
             <div class="flex flex-col gap-4">
-              <button class="w-full py-3 bg-green-600 text-white text-sm font-medium rounded-lg flex items-center justify-center gap-2">
+              <button class="w-full py-3 bg-green-600 text-white text-base font-medium rounded-lg flex items-center justify-center gap-2">
                 <img className="w-5 h-5" src="/icons/Frame1.png" alt="" />{" "}
                 Contact Vendor
               </button>
 
-              <button class="w-full py-3 bg-green-600 text-white text-sm font-medium rounded-lg flex items-center justify-center gap-2">
+              <button class="w-full py-3 bg-green-600 text-white text-base font-medium rounded-lg flex items-center justify-center gap-2">
                 <img className="w-5 h-5" src="/icons/scan.png" alt="" /> Make an
                 Offer
               </button>
@@ -373,9 +372,9 @@ const Product = () => {
                       <img className="w-5 h-5" src="/icons/star1.png" alt="" />
                     </div>
                   </div>
-                  <div class="text-sm text-black opacity-20">24 June, 2024</div>
+                  <div class="text-base text-black opacity-20">24 June, 2024</div>
                 </div>
-                <p class="text-gray-500 text-sm">
+                <p class="text-gray-500 text-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit arcu
                   aliquam, leo neque lacinia sagittis venenatis nullam dictumst
                   torquent. Lorem ipsum dolor sit amet consectetur adipiscing
@@ -385,7 +384,7 @@ const Product = () => {
               </div>
             </div>
 
-            <div class="bg-green-600 text-white text-center text-sm font-medium py-3 rounded-lg">
+            <div class="bg-green-600 text-white text-center text-base font-medium py-3 rounded-lg">
               View More (20+ reviews)
             </div>
           </Card>
