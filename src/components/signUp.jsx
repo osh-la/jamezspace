@@ -7,7 +7,7 @@ const SignUp = ({ toggle }) => {
     <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">
 
     </div>
-      <form method='' action='/' className="md:fixed md:inset-0 z-50 md:m-6 text-xs md:text-base md:w-2/4 w-full mx-auto bg-white rounded-2xl  shadow-custom p-10 md:p-20  overflow-y-scroll scrollbar-hide">
+      <form method='' action='/' className="md:fixed md:inset-0 z-50 mx-auto md:mt-5 text-xs md:text-base md:w-2/4 w-full  bg-white rounded-2xl  shadow-custom p-10 md:p-20  overflow-y-scroll scrollbar-hide">
 
         <div className="flex justify-end">
           <button className="text-gray-500 hover:text-gray-700" onClick={toggle}>

@@ -35,7 +35,7 @@ const Product = () => {
                 <img className="w-[147px] h-[147px]" src={Iphone} />
               </div>
 
-              <div className="w-52 h-44 pl-12 pr-12 py-4 bg-custom-gray rounded-2xl flex justify-center items-center">
+              <div className="w-52 h-44 pl-12 pr-12 py-4  bg-custom-gray rounded-2xl flex justify-center items-center">
                 <img className="w-[147px] h-[147px]" src={IphonePreview} />
               </div>
             </div>
