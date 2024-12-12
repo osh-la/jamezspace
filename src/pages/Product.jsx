@@ -51,7 +51,7 @@ const Product = () => {
                 </div>
 
                 <div className="flex space-between">
-                  <div className="h-11 px-7 bg-orange-100 rounded-2xl justify-center items-center gap-2.5 inline-flex">
+                  <div className="h-11 px-4 md:px-7 bg-orange-100 rounded-2xl justify-center items-center gap-2.5 inline-flex">
                     <Button bg="text-orange-500" round="rounded-full">
                       <p className=" text-center text-base md:text-base font-bold font-['SF Pro Display'] leading-normal">
                         Promoted
