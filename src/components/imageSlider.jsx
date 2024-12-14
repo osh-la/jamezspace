@@ -14,8 +14,8 @@ const ImageSlider = () => {
   return (
     <div className="relative w-full h-80 md:h-card">
       <div className="w-full h-full  absolute justify-between items-center inline-flex">
-        <div className="w-[85.79px] px-7 py-2.5 left-4 top-6 absolute bg-gray-200 rounded-[19.95px] justify-center items-center gap-2.5 inline-flex">
-          <div className="text-center text-[#6D7280] text-sm font-bold font-['SF Pro Display'] leading-normal">
+        <div className="md:w-[85.79px] px-7 py-2.5 left-4 top-6 absolute bg-gray-200 rounded-[19.95px] justify-center items-center gap-2.5 inline-flex">
+          <div className="text-center text-[#6D7280] text-xs md:text-sm font-bold font-['SF Pro Display'] leading-normal">
             USED
           </div>
         </div>
