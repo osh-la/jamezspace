@@ -42,10 +42,10 @@ const Product = () => {
             <div className="border-b-2 border-gray-100 py-4 md:py-6">
               <div className="flex justify-between">
                 <div className="">
-                  <h1 className="md:w-96 text-black text-xl md:text-2xl font-semibold font-['SF Pro Display'] leading-normal">
+                  <h1 className="md:w-96 text-black text-lg md:text-2xl font-semibold font-['SF Pro Display'] leading-normal">
                     iPhone 14 Pro Max
                   </h1>
-                  <h2 className="md:w-96 text-black text-xl md:text-4xl font-bold font-['SF Pro Display'] leading-normal">
+                  <h2 className="md:w-96 text-black text-lg md:text-4xl font-bold font-['SF Pro Display'] leading-normal">
                     ₦1,200,000
                   </h2>
                 </div>
