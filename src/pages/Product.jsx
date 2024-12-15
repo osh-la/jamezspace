@@ -40,7 +40,7 @@ const Product = () => {
             </div>
 
             <div className="border-b-2 border-gray-100 py-4 md:py-6">
-              <div className="flex justify-between">
+              <div className="flex items-center justify-between">
                 <div className="">
                   <h1 className="md:w-96 text-black text-lg md:text-2xl font-semibold font-['SF Pro Display'] leading-normal">
                     iPhone 14 Pro Max
@@ -53,20 +53,20 @@ const Product = () => {
                 <div className="flex space-between">
                   <div className="h-11 px-4 md:px-7 bg-orange-100 rounded-2xl justify-center items-center gap-2.5 inline-flex">
                     <Button bg="text-orange-500" round="rounded-full">
-                      <p className=" text-center text-base md:text-base font-bold font-['SF Pro Display'] leading-normal">
+                      <p className=" text-center text-sm md:text-base font-bold font-['SF Pro Display'] leading-normal">
                         Promoted
                       </p>
                     </Button>
                   </div>
                   <img
-                    className="w-10 ml-5 h-10"
+                    className="w-8 md:w-10 ml-5 h-10"
                     src="/icons/heart.svg"
                     alt=""
                   />
                 </div>
               </div>
 
-              <div className="  flex justify-between md:justify-start  mt-6 text-gray-600 text-base font-medium font-['SF Pro Display'] leading-normal">
+              <div className="  flex justify-between md:justify-start  mt-6 text-gray-600 text-sm md:text-base font-medium font-['SF Pro Display'] leading-normal">
                 <div className="flex items-center gap-1">
                   <img className="w-4 h-4" src={Target} alt="" />
                   <p>Abuja, Nigeria</p>
