@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 const Downhero = () => {
       const [currentIndex, setCurrentIndex] = useState(0);
-      const textArray = [
+      const textArray:string[] = [
         "Lorem ipsum dolor sit amet consectetur adipiscing elit arcu aliquam, leo neque lacinia sagittis venenatis nullam dictumst torquent,Lorem ipsum dolor sit amet consectetur adipiscing elit arcu aliquam, leo neque lacinia sagittis venenatis nullam dictumst.",
         "Lorem ipsum dolor sit amet consectetur adipiscing elit arcu aliquam, leo neque lacinia sagittis venenatis nullam dictumst torquent,Lorem ipsum dolor ",
         "adipiscing elit arcu aliquam, leo neque lacinia sagittis venenatis nullam dictumst torquent,Lorem ipsum dolor sit amet consectetur adipiscing elit arcu aliquam, leo neque lacinia sagittis venenatis nullam dictumst.",

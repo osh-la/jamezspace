@@ -1,4 +1,8 @@
-const SignIn = ({ toggle }) => {
+
+interface toggleType{
+    toggle:()=>void;
+}
+const SignIn:React.FC<toggleType> = ({ toggle }) => {
     return (
         <>
         <div className="fixed inset-0 flex flex-col items-center justify-center text-start bg-black bg-opacity-70 z-50">

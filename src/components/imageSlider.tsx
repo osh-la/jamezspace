@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const ImageSlider = () => {
-  const images = ["/iphone2.png", "/iphone3.png"];
+  const images:string[] = ["/iphone2.png", "/iphone3.png"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -36,20 +36,20 @@ const ImageSlider = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <span className="text-white  font-bold">
               <div
-                class="text-white/30 text-4xl md:text-7xl font-black text-center md:text-start leading-relaxed"
+                className="text-white/30 text-4xl md:text-7xl font-black text-center md:text-start leading-relaxed"
                 style={{
                   WebkitTextStroke: "1px white",
-                  textStroke: "1px white",
+                 
                 }}
               >
                 JamezSpace
               </div>
 
               <div
-                class="text-white/30 md:text-4xl font-bold text-center leading-5"
+                className="text-white/30 md:text-4xl font-bold text-center leading-5"
                 style={{
                   WebkitTextStroke: "1px white",
-                  textStroke: "1px white",
+                  
                 }}
               >
                 Posted by RealOne Gadget

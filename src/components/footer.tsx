@@ -1,4 +1,4 @@
-import Logo from '/logo.png'
+
 import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
@@ -6,7 +6,7 @@ const Footer = () => {
       <section className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:p-20">
         <div className="block col-span-1 ">
           <div className="flex items-center justify-center md:justify-start">
-            <img src={Logo} alt="JamezSpace logo" />
+            <img src='/logo.png' alt="JamezSpace logo" />
             <h1 className="font-bold">JamezSpace</h1>
           </div>
 
@@ -30,31 +30,31 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div class="">
-          <div class="text-center md:text-start text-white text-base font-bold leading-none">
+        <div className="">
+          <div className="text-center md:text-start text-white text-base font-bold leading-none">
             Access JamezPay Anywhere Anytime
           </div>
-          <div class="mt-6 flex flex-col items-center md:items-start">
-            <div class="w-36 h-10 bg-black rounded border border-gray-400">
+          <div className="mt-6 flex flex-col items-center md:items-start">
+            <div className="w-36 h-10 bg-black rounded border border-gray-400">
               <img className="w-full " src="/footer/app.png" alt="App Store icon" />
             </div>
-            <div class="w-36 h-10 rounded border mt-4 border-gray-400 relative">
+            <div className="w-36 h-10 rounded border mt-4 border-gray-400 relative">
             <img src="/footer/play.png" alt="" />
           </div>
         </div>
         </div>
 
-  <div class="flex justify-center md:justify-start items-start gap-6">
-    <div class="w-6 h-6">
+  <div className="flex justify-center md:justify-start items-start gap-6">
+    <div className="w-6 h-6">
       <img src="/icons/Twitter.svg" alt="twitter" />
     </div>
-    <div class="w-6 h-6">
+    <div className="w-6 h-6">
     <img src="/icons/Facebook.svg" alt="facebook" />
     </div>
-    <div class="w-6 h-6">
+    <div className="w-6 h-6">
     <img src="/icons/Tiktok.svg" alt="tiktok" />
     </div>
-    <div class="w-6 h-6">
+    <div className="w-6 h-6">
     <img src="/icons/Instagram.svg" alt="instagram" />
     </div>
   </div>

@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import { Range } from "react-range";
 
 const PriceRangeFilter = () => {
-  const [priceRange, setPriceRange] = useState([1000, 1000000]); // Initial values
+  const [priceRange, setPriceRange] = useState([1000, 1000000]); 
   const MIN = 1000;
   const MAX = 10000000;
 
-  const handleInputChange = (value, index) => {
+  const handleInputChange = (value:string, index:number) => {
     const newRange = [...priceRange];
     newRange[index] = Number(value);
     setPriceRange(newRange);

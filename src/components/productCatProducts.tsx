@@ -13,11 +13,11 @@ const ProductList = () => {
   };
 
 
-  const handleViewModeChange = (mode) => {
+  const handleViewModeChange = (mode:any) => {
     setViewMode(mode);
   };
 
-  const handleSortByChange = (sortBy) => {
+  const handleSortByChange = (sortBy:any) => {
     setSortBy(sortBy);
   };
 
@@ -81,7 +81,7 @@ const ProductList = () => {
       </div>
 
       <div className={`grid gap-4 ${viewMode === 'list' ? 'grid-cols-1' : 'grid-cols-2'}`}>
-        {products.sort((a, b) => {
+        {products.sort((a:any, b:any) => {
           if (sortBy === 'price-asc') {
             return a.price.localeCompare(b.price);
           } else if (sortBy === 'price-desc') {
@@ -89,7 +89,7 @@ const ProductList = () => {
           } else {
             return 0;
           }
-        }).map((product) => (
+        }).map((product:any) => (
 
           <div className="relative shadow-sm product-card bg-gray-100 p-4 py-10 rounded-lg text-center">
             <div className="flex items-center jusitfy-between">

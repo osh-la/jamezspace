@@ -1,6 +1,8 @@
-import React from 'react'
 
-const SignUp = ({ toggle }) => {
+interface toggleType{
+  toggle: ()=> void;
+}
+const SignUp:React.FC<toggleType> = ({ toggle}) => {
   return (
 
     <>
@@ -38,7 +40,7 @@ const SignUp = ({ toggle }) => {
             </div>
             
           ))}
-          <div flex flex-col>
+          <div>
 
           <label className=" text-gray-700 md:text-sm font-medium">Enter Password</label>
               <div className="flex items-center px-4 py-2 border border-gray-300 rounded-lg">

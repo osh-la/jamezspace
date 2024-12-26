@@ -2,7 +2,11 @@ import React, { useState } from 'react';
 import productsData from './products.json';
 import { Link } from 'react-router-dom';
 
-  function ProductCard( {product}) {
+interface productProp{
+  product:any
+}
+
+  const ProductCard:React.FC<productProp> = ( {product}) => {
 
     const [liked, setLiked] = useState(product.isFavorite);
   
@@ -48,14 +52,18 @@ import { Link } from 'react-router-dom';
     );
   }
   
+interface productDataProps{
+  maxItems:number;
+  grid:string
+}
 
-
-function Topdeals({ maxItems, grid = 'grid-cols-3' }) {
+const Topdeals:React.FC<productDataProps> = ({ maxItems, grid = 'grid-cols-3' }) => {
   const displayedProducts = maxItems ? productsData.slice(0, maxItems) : productsData;
+
 
   return (
     <div className={` grid grid-cols-1 md:${grid} gap-2`}>
-      {displayedProducts.map((product) => (
+      {displayedProducts.map((product:any ) => (
         <ProductCard key={product.id} product={product} />
       ))}
     </div>

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import Search from '/Search.png'
 import React, { useState } from "react";
 import SignIn from "./signIn";
 import SignUp from "./signUp";

@@ -1,7 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, ReactNode } from 'react';
 import { Link } from "react-router-dom"
 
-const CategoryItem = ({ image, title, count, subcategories }) => {
+interface Subcategory {
+  title: string;
+  count: number;
+  image: string;
+}
+interface categoryProps{
+image:string;
+title:string;
+count:number;
+subcategories:Subcategory[];
+}
+
+const CategoryItem:React.FC<categoryProps> = ({ image, title, count, subcategories }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -18,7 +30,7 @@ const CategoryItem = ({ image, title, count, subcategories }) => {
             <p className="text-gray-500 text-base font-medium font-['SF Pro Display'] leading-normal tracking-wide">{count} Items</p>
           </div>
         </Link>
-        <svg onClick={toggleExpand} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class={`w-6 h-6 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
+        <svg onClick={toggleExpand} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className={`w-6 h-6 transition-transform duration-300 ${isExpanded ? 'rotate-180' : ''}`}>
           <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
         </svg>
       </div>
@@ -43,7 +55,7 @@ function CategoryList() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const categories = [
+  const categories= [
     {
       title: 'Mobile phones & tablets',
       count: 2823833,
@@ -143,7 +155,7 @@ function CategoryList() {
         </button>
       </div>
       <div className="md:hidden flex justify-end">
-        <div className={`fixed absolute inset-0 bg-black bg-opacity-50 z-50 overflow-y-scroll scrollbar-hide  ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`fixed inset-0 bg-black bg-opacity-50 z-50 overflow-y-scroll scrollbar-hide  ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className=" overlow-y-scroll md:overflow-hidden scrollbar-hide bg-gray-100 w-full mx-auto max-w-sm rounded-lg p-10">
             <button className="absolute top-4 right-10 text-gray-500 hover:text-gray-700" onClick={toggleMenu}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-6    h-6">

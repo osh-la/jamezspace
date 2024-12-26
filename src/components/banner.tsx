@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 function Banner() {
 
-  const banner = [
+ const banner: { image: string; text: string; button: string }[] = [
     {
       image: "/banner/bannerFirst.png",
       text: "Reach thousands of buyers with ease on JamezSpace.",
