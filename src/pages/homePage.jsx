@@ -23,10 +23,10 @@ const Homepage = () => {
           </h1>
 
 
-          <p className='text-gray-600 text-sm mb-5 m-2'>Currently showing items available at <span className="text-black font-semibold">Abuja, Nigeria.</span> To change your location, please use the drop-down menu below.</p>
+          <p className='text-gray-600  mb-5 m-2'>Currently showing items available at <span className="text-black font-semibold">Abuja, Nigeria.</span> To change your location, please use the drop-down menu below.</p>
           <div className="flex justify-center">
             <div class="relative  w-64">
-              <button onClick={toggleLocation} class="appearance-none focus:outline-none w-full py-2 px-4 pr-10 text-sm md:text-base rounded-md border border-green-400 bg-white text-green-600 font-semibold p-2 text-center">
+              <button onClick={toggleLocation} class="appearance-none focus:outline-none w-full py-2 px-4 pr-10 rounded-md border border-green-400 bg-white text-green-600 font-semibold p-2 text-center">
                 Abuja Nigeria
               </button>
               <span class="absolute top-1/2 left-2/3 transform -translate-y-1/2 pointer-events-none">

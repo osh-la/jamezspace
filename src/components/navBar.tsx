@@ -22,7 +22,7 @@ import SignUp from "./signUp";
               <li>
                 <Link to='/' className="flex items-center">
                   <img src="/logo.png" alt="Logo" />
-                  <p>Jamezspace</p>
+                  <p className="text-base md:text-lg">Jamezspace</p>
                 </Link>
               </li>
               <div className="relative w-2/5">
@@ -32,22 +32,22 @@ import SignUp from "./signUp";
                   stroke="gray" stroke-width="2.5" stroke-linecap="round"/>
                   </svg>
                 </span>
-                <input type="text" placeholder="Search" className="w-full pl-10 py-2 border rounded-md  text-black focus:outline-none"/>
+                <input type="text" placeholder="Search" className="w-full pl-10 py-2 text-base md:text-lg border rounded-md  text-black focus:outline-none"/>
                 </div>
-                <button onClick={ToggleSignin} className="text-sm hover:text-gray-500">
+                <button onClick={ToggleSignin} className="text-sm md:text-lg hover:text-gray-500">
                 Login
               </button>
-              <button onClick={toggleSignUp} className="text-sm hover:text-gray-500">
+              <button onClick={toggleSignUp} className="text-sm md:text-lg hover:text-gray-500">
                 Signup
               </button>
-              <li className="text-sm hover:text-gray-500">
+              <li className="text-sm md:text-lg hover:text-gray-500">
                 <button className="bg-green-600 w-36 py-4 rounded-md">List item</button>
               </li>
             </ul>
           </nav>
     
           {/* Mobile Navbar */}
-          <nav className="sm:block md:hidden bg-white">
+          <nav className="text-sm md:text-lg:block md:hidden bg-white">
             <div className="container px-4 py-2 items-center">
               <div className="flex items-center justify-between">
                 <Link to='/' className="flex items-center">

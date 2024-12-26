@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
-    <section className="font-family:'SF_Pro_Display-Bold',Helvetica] bg-black text-sm text-gray-200 text-center">
+    <section className="font-family:'SF_Pro_Display-Bold',Helvetica] bg-black text-sm md:text-lg text-gray-200 text-center">
       <section className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:p-20">
         <div className="block col-span-1 ">
           <div className="flex items-center justify-center md:justify-start">
@@ -10,7 +10,7 @@ const Footer = () => {
             <h1 className="font-bold">JamezSpace</h1>
           </div>
 
-          <p className="text-center md:text-start text-sm font-normal font-['SF Pro Display'] leading-loose ">
+          <p className="text-center md:text-start text-sm md:text-lg font-normal font-['SF Pro Display'] leading-loose ">
             JamezSpace is your trusted marketplace for buying and selling goods locally. We connect communities, offering a seamless platform for exchanging quality products and services.
 
           </p>
