@@ -11,7 +11,7 @@ const SignIn:React.FC<toggleType> = ({ toggle }) => {
         <form method="" action="" className="md:fixed md:inset-0 z-50 p-10 md:p-20 text-xs md:text-base md:w-2/4 w-full mx-auto md:mt-5  bg-white rounded-2xl  shadow-custom  overflow-y-scroll scrollbar-hide">
             <div className=" flex justify-end">
                 <button className=" text-gray-500 hover:text-gray-700" onClick={toggle} >
-                    <svg xmlns="http://www.w3.org/2000/svg" className='h-5 w-5 'viewBox="0 0 28 28" fill="none">
+                    <svg xmlns="http://www.w3.org/2000/svg" className='h-3 w-3 md:h-5 md:w-5 'viewBox="0 0 28 28" fill="none">
                         <path d="M3.89467 1.41939C3.21124 0.735977 2.10321 0.735977 1.41978 1.41939C0.736374 2.10281 0.736374 3.21084 1.41978 3.89427L11.5255 14L1.41989 24.1057C0.736479 24.7891 0.736479 25.8972 1.41989 26.5806C2.10332 27.2639 3.21135 27.2639 3.89476 26.5806L14.0004 16.4748L24.1061 26.5806C24.7895 27.2639 25.8976 27.2639 26.581 26.5806C27.2643 25.8972 27.2643 24.7891 26.581 24.1057L16.4752 14L26.5811 3.89427C27.2645 3.21084 27.2645 2.10281 26.5811 1.41939C25.8978 0.735977 24.7897 0.735977 24.1063 1.41939L14.0004 11.5251L3.89467 1.41939Z" fill="#1F2937" />
                     </svg>
                 </button>
