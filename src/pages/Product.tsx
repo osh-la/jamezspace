@@ -286,7 +286,7 @@ const Product = () => {
                 </div>
               </div>
             </div>
-            <Topdeals maxItems={6} />
+            <Topdeals maxItems={6} grid={'grid-cols-3'} />
           </div>
         </section>
         {/* sidebar */}
@@ -304,59 +304,59 @@ const Product = () => {
           </div>
 
           <Card>
-            <div class="flex items-center gap-4">
-              <div class="w-24 h-24 bg-white rounded-full relative">
-                <div class="w-16 h-16 absolute left-5 top-5">
+            <div className="flex items-center gap-4">
+              <div className="w-24 h-24 bg-white rounded-full relative">
+                <div className="w-16 h-16 absolute left-5 top-5">
                   <img src="/icons/anon.png" alt="" />
                 </div>
-                <div class="w-9 h-9 p-1.5 bg-orange-100 rounded-full border-2 border-white absolute left-16 md:left-20 top-14 flex justify-center items-center">
-                  <div class="w-6 h-6 flex">
+                <div className="w-9 h-9 p-1.5 bg-orange-100 rounded-full border-2 border-white absolute left-16 md:left-20 top-14 flex justify-center items-center">
+                  <div className="w-6 h-6 flex">
                     <img src="/icons/tick.png" alt="" />
                   </div>
                 </div>
               </div>
 
-              <div class="flex flex-col gap-2">
-                <div class="text-gray-900 text-2xl font-medium">
+              <div className="flex flex-col gap-2">
+                <div className="text-gray-900 text-2xl font-medium">
                   OneRealGadget
                 </div>
-                <div class="flex items-center gap-2">
-                  <span class="text-gray-600 text-xs">
+                <div className="flex items-center gap-2">
+                  <span className="text-gray-600 text-xs">
                     About 2yrs on JamezSpace
                   </span>
-                  <div class="px-2 py-1 bg-orange-100 rounded-md flex items-center">
-                    <span class="text-orange-600 text-xs">Verified User</span>
+                  <div className="px-2 py-1 bg-orange-100 rounded-md flex items-center">
+                    <span className="text-orange-600 text-xs">Verified User</span>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="flex flex-col gap-4">
-              <button class="w-full py-3 bg-green-600 text-white text-base font-medium rounded-lg flex items-center justify-center gap-2">
+            <div className="flex flex-col gap-4">
+              <button className="w-full py-3 bg-green-600 text-white text-base font-medium rounded-lg flex items-center justify-center gap-2">
                 <img className="w-5 h-5" src="/icons/Frame1.png" alt="" />{" "}
                 Contact Vendor
               </button>
 
-              <button class="w-full py-3 bg-green-600 text-white text-base font-medium rounded-lg flex items-center justify-center gap-2">
+              <button className="w-full py-3 bg-green-600 text-white text-base font-medium rounded-lg flex items-center justify-center gap-2">
                 <img className="w-5 h-5" src="/icons/scan.png" alt="" /> Make an
                 Offer
               </button>
             </div>
           </Card>
           <Card>
-            <div class="text-2xl font-bold text-black mb-6">
+            <div className="text-2xl font-bold text-black mb-6">
               Reviews and Ratings
             </div>
 
-            <div class=" rounded-lg py-6 flex gap-4 mb-6">
+            <div className=" rounded-lg py-6 flex gap-4 mb-6">
               <img
-                class="w-14 h-14 rounded-full"
+                className="w-14 h-14 rounded-full"
                 src="/user.png"
                 alt="Profile"
               />
-              <div class="flex flex-col flex-1 gap-2">
-                <div class="flex justify-between items-start">
-                  <div class="text-black text-lg font-bold">
+              <div className="flex flex-col flex-1 gap-2">
+                <div className="flex justify-between items-start">
+                  <div className="text-black text-lg font-bold">
                     John Malcolm
                     <div className="flex gap-1">
                       {Array(4)
@@ -372,9 +372,9 @@ const Product = () => {
                       <img className="w-5 h-5" src="/icons/star1.png" alt="" />
                     </div>
                   </div>
-                  <div class="text-base text-black opacity-20">24 June, 2024</div>
+                  <div className="text-base text-black opacity-20">24 June, 2024</div>
                 </div>
-                <p class="text-gray-500 text-base">
+                <p className="text-gray-500 text-base">
                   Lorem ipsum dolor sit amet consectetur adipiscing elit arcu
                   aliquam, leo neque lacinia sagittis venenatis nullam dictumst
                   torquent. Lorem ipsum dolor sit amet consectetur adipiscing
@@ -384,30 +384,30 @@ const Product = () => {
               </div>
             </div>
 
-            <div class="bg-green-600 text-white text-center text-base font-medium py-3 rounded-lg">
+            <div className="bg-green-600 text-white text-center text-base font-medium py-3 rounded-lg">
               View More (20+ reviews)
             </div>
           </Card>
           <Card>
-            <div class="text-2xl font-bold text-black mb-4">Share Items</div>
-            <div class="flex justify-start items-center space-x-8">
-              <div class="p-2 bg-green-600 rounded-full flex justify-center items-center">
-                <div class="w-8 h-8">
+            <div className="text-2xl font-bold text-black mb-4">Share Items</div>
+            <div className="flex justify-start items-center space-x-8">
+              <div className="p-2 bg-green-600 rounded-full flex justify-center items-center">
+                <div className="w-8 h-8">
                   <img src="/icons/facebook.png" alt="" />
                 </div>
               </div>
-              <div class="p-2 bg-green-600 rounded-full flex justify-center items-center">
-                <div class="w-8 h-8">
+              <div className="p-2 bg-green-600 rounded-full flex justify-center items-center">
+                <div className="w-8 h-8">
                   <img src="/icons/whatsapp.png" alt="" />
                 </div>
               </div>
-              <div class="p-2 bg-green-600 rounded-full flex justify-center items-center">
-                <div class="w-8 h-8">
+              <div className="p-2 bg-green-600 rounded-full flex justify-center items-center">
+                <div className="w-8 h-8">
                   <img src="/icons/instagram.png" alt="" />
                 </div>
               </div>
-              <div class="p-2 bg-green-600 rounded-full flex justify-center items-center">
-                <div class="w-8 h-8">
+              <div className="p-2 bg-green-600 rounded-full flex justify-center items-center">
+                <div className="w-8 h-8">
                   <img src="/icons/linktree.png" alt="" />
                 </div>
               </div>
@@ -431,7 +431,7 @@ const Product = () => {
                 item.
               </li>
             </ol>
-            <Button bg="bg-orange-100" className="text-0range-600">
+            <Button bg="bg-orange-100">
               Mark Product as Unavailable
             </Button>
             <Button bg="bg-red-100">
@@ -443,7 +443,7 @@ const Product = () => {
           </Card>
 
           <div className="m-auto">
-            <div class="relative bg-orange-400 mt-6 h-ads rounded-2xl overflow-hidden">
+            <div className="relative bg-orange-400 mt-6 h-ads rounded-2xl overflow-hidden">
               <img src="/lady.png" alt="Product Image" className="  w-full " />
               <div className="w-full absolute bottom-0 h-60 items-center justify-center inline-flex   bg-gradient-to-t from-orange-400 via-orange-500 to-transparent">
                 <div className="m-8 -mt-6   space-y-6 to-orange-400">
@@ -451,7 +451,7 @@ const Product = () => {
                     Reach thousands of buyers with ease on JamezSpace.
                   </h2>
 
-                  <button class="text-center text-white text-base font-medium font-['SF Pro Display'] leading-normal py-2 px-4 rounded border border-white">
+                  <button className="text-center text-white text-base font-medium font-['SF Pro Display'] leading-normal py-2 px-4 rounded border border-white">
                     Start Selling
                   </button>
 

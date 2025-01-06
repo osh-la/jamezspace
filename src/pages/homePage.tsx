@@ -25,12 +25,12 @@ const Homepage = () => {
 
           <p className='text-gray-600  mb-5 m-2'>Currently showing items available at <span className="text-black font-semibold">Abuja, Nigeria.</span> To change your location, please use the drop-down menu below.</p>
           <div className="flex justify-center">
-            <div class="relative  w-64">
-              <button onClick={toggleLocation} class="appearance-none focus:outline-none w-full py-2 px-4 pr-10 rounded-md border border-green-400 bg-white text-green-600 font-semibold p-2 text-center">
+            <div className="relative  w-64">
+              <button onClick={toggleLocation} className="appearance-none focus:outline-none w-full py-2 px-4 pr-10 rounded-md border border-green-400 bg-white text-green-600 font-semibold p-2 text-center">
                 Abuja Nigeria
               </button>
-              <span class="absolute top-1/2 left-2/3 transform -translate-y-1/2 pointer-events-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
+              <span className="absolute top-1/2 left-2/3 transform -translate-y-1/2 pointer-events-none">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-green-500" viewBox="0 0 20 20" fill="currentColor">
                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
                 </svg>
               </span>
@@ -87,7 +87,7 @@ const Homepage = () => {
               </Link>
 
               <Warn />
-              <Topdeals />
+              <Topdeals maxItems={''} grid={'grid-cols-3'} />
             </div>
           </div>
         </section>

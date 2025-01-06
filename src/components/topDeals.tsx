@@ -53,7 +53,7 @@ interface productProp{
   }
   
 interface productDataProps{
-  maxItems:number;
+  maxItems:any;
   grid:string
 }
 

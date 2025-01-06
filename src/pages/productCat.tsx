@@ -3,7 +3,7 @@ import Card from "../components/card";
 import Button from "../components/button";
 import ProductList from "../components/productCatProducts";
 import Banner from "../components/banner";
-import PriceRangeFilter from "../components/PriceRangeFilter";
+import PriceRangeFilter from "../components/priceRangeFilter";
 import React, { useState } from 'react';
 const Productcat = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
