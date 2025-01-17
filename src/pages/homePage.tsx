@@ -16,14 +16,14 @@ const Homepage = () => {
   return (
     <section>
 
-      <section className=" font-family:'SF_Pro_Display-Bold',Helvetica] p-2 md:mx-20">
+      <section className="p-2 md:mx-20">
         <div className='text-center py-5 md:py-0 md:m-10'>
           <h1 className='text-green-600 font-bold text-2xl md:text-6xl'>
             Discover amazing deals
           </h1>
 
 
-          <p className='text-gray-600  mb-5 m-2'>Currently showing items available at <span className="text-black font-semibold">Abuja, Nigeria.</span> To change your location, please use the drop-down menu below.</p>
+          <p className='text-gray-600 md:text-lg  mb-5 m-2'>Currently showing items available at <span className="text-black font-semibold">Abuja, Nigeria.</span> To change your location, please use the drop-down menu below.</p>
           <div className="flex justify-center">
             <div className="relative  w-64">
               <button onClick={toggleLocation} className="appearance-none focus:outline-none w-full py-2 px-4 pr-10 rounded-md border border-green-400 bg-white text-green-600 font-semibold p-2 text-center">

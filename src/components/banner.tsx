@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 function Banner() {
 
@@ -21,22 +21,35 @@ function Banner() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalRef:any = useRef(null);
 
-  const handlePrevClick = () => {
-    setCurrentIndex((currentIndex - 1 + banner.length) % banner.length);
+  const startInterval = () => {
+    intervalRef.current = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % banner.length);
+    }, 3000);
   };
 
-  const handleNextClick = () => {
-    setCurrentIndex((currentIndex + 1) % banner.length);
+  const stopInterval = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+  };
+
+  const handleNext = () => {
+    stopInterval();
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % banner.length);
+    startInterval();
+  };
+
+  const handlePrevious = () => {
+    stopInterval();
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + banner.length) % banner.length);
+    startInterval();
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % banner.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
+    startInterval();
+    return () => stopInterval();
   }, []);
+
   return (
     <>
 
@@ -48,7 +61,7 @@ function Banner() {
         />
         <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex">
           <button
-            onClick={handlePrevClick}
+            onClick={handlePrevious}
             className="p-2 rounded-full md:px-8"
           >
             <img
@@ -68,7 +81,7 @@ function Banner() {
         </div>
         <div className="absolute top-1/2 -translate-y-1/2 right-0">
           <button
-            onClick={handleNextClick}
+            onClick={handleNext}
             className="p-2 rounded-full md:px-8"
           >
             <img
@@ -93,7 +106,7 @@ function Banner() {
         <div className="absolute inset-0 rounded-md " />
         <div className="absolute inset-0 flex items-center justify-between px-4">
 
-          <button onClick={handlePrevClick} className="p-2 z-10">
+          <button onClick={handlePrevious} className="p-2 z-10">
             <img src="/leftarrow.svg" alt="Previous" className="w-6 h-6" />
           </button>
 
@@ -108,7 +121,7 @@ function Banner() {
           </div>
 
           {/* Right Arrow */}
-          <button onClick={handleNextClick} className="p-2 z-10">
+          <button onClick={handleNext} className="p-2 z-10">
             <img src="/rightarrow.svg" alt="Next" className="w-6 h-6" />
           </button>
         </div>
